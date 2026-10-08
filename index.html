@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Task </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <form id="todoform">
+                        <div class="form-group">
+                            <label for="todoInput"> Enter Todo :</label>
+                            <input required type="text" id="todoInput" class="form-control">
+                        </div>
+                       <div class="form-group">
+                        <label for="todoselect">UserId :</label>
+                         <select id="todoselect" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                       </div>
+                        <button type="submit" id="addbtn" class="btn btn-sm btn-block btn-primary">Add Todo</button>
+                        <button type="button" id="updatebtn" class="btn btn-sm btn-block btn-secondary d-none">Update Todo</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mt-4">
+            <ul id="todocontainer">
+                <!-- <li class="list-group-item d-flex justify-content-between">
+                    <strong>Html</strong>
+                    <div>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+  </div>  
+
+  
+<div class="spinner d-none" id="spinner">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+   </div>
+</div>
+   
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+    <script src="./app.js"></script>
+</body>
+</html>
